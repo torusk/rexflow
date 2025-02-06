@@ -1,4 +1,4 @@
-# rexflow　app
+# rexflow 　 app
 
 This is a simple rexflow application built with Next.js and React. It allows users to upload a JSON dataset of vocabulary questions and take a quiz based on that dataset.
 
@@ -7,15 +7,15 @@ This is a simple rexflow application built with Next.js and React. It allows use
 \`\`\`
 vocabulary-quiz-app/
 ├── app/
-│   └── page.tsx
+│ └── page.tsx
 ├── components/
-│   └── ui/
-│       ├── button.tsx
-│       ├── card.tsx
-│       ├── label.tsx
-│       └── radio-group.tsx
+│ └── ui/
+│ ├── button.tsx
+│ ├── card.tsx
+│ ├── label.tsx
+│ └── radio-group.tsx
 ├── lib/
-│   └── utils.ts
+│ └── utils.ts
 ├── public/
 ├── README.md
 └── package.json
@@ -48,16 +48,16 @@ vocabulary-quiz-app/
 1. Prepare a JSON file with your vocabulary questions. The file should have the following structure:
    \`\`\`json
    {
-     "vocabulary": [
-       {
-         "word": "example",
-         "meaning": "a representative form or pattern",
-         "example": "This is an example sentence.",
-         "question": "What word means 'a representative form or pattern'?",
-         "options": ["example", "sample", "model", "instance"]
-       },
-       // ... more questions ...
-     ]
+   "vocabulary": [
+   {
+   "word": "example",
+   "meaning": "a representative form or pattern",
+   "example": "This is an example sentence.",
+   "question": "What word means 'a representative form or pattern'?",
+   "options": ["example", "sample", "model", "instance"]
+   },
+   // ... more questions ...
+   ]
    }
    \`\`\`
 
@@ -66,6 +66,7 @@ vocabulary-quiz-app/
 3. After uploading, the quiz will start automatically.
 
 4. For each question:
+
    - You have 5 seconds to answer
    - If you don't answer within 5 seconds, it will show the correct answer
    - After answering or after the time is up, you'll see an explanation with the correct answer, meaning, and an example sentence
@@ -93,59 +94,3 @@ This project uses Tailwind CSS for styling. The main styling is done inline in t
 To make global style changes, you can edit the Tailwind configuration file (`tailwind.config.js`) to add custom colors, fonts, or modify existing theme values.
 
 Remember to rebuild your application after making changes to see the updates.
-
-## GitHubとの連携
-
-このプロジェクトをGitHubと連携するには、以下の手順に従ってください：
-
-1. GitHubアカウントを作成する（まだ持っていない場合）
-   - [GitHub](https://github.com/)にアクセスし、サインアップしてください。
-
-2. 新しいリポジトリを作成する
-   - GitHubにログインした後、右上の「+」アイコンをクリックし、「New repository」を選択します。
-   - リポジトリ名を入力します（例：「vocabulary-quiz-app」）。
-   - 必要に応じて説明を追加します。
-   - 「Public」または「Private」を選択します。
-   - 「Initialize this repository with a README」のチェックを外します。
-   - 「Create repository」をクリックします。
-
-3. ローカルプロジェクトをGitリポジトリとして初期化する
-   - ターミナルでプロジェクトのルートディレクトリに移動します。
-   - 以下のコマンドを実行します：
-     \`\`\`
-     git init
-     git add .
-     git commit -m "Initial commit"
-     \`\`\`
-
-4. GitHubリポジトリをリモートとして追加する
-   - GitHubリポジトリのページで、「Quick setup」セクションにあるリモートURLをコピーします。
-   - ターミナルで以下のコマンドを実行します（URLは自分のリポジトリのものに置き換えてください）：
-     \`\`\`
-     git remote add origin https://github.com/yourusername/vocabulary-quiz-app.git
-     \`\`\`
-
-5. ローカルの変更をGitHubにプッシュする
-   - 以下のコマンドを実行します：
-     \`\`\`
-     git push -u origin main
-     \`\`\`
-
-6. 継続的な開発とバージョン管理
-   - 新しい機能を追加したり、バグを修正したりした後は、以下のコマンドを使用して変更をコミットし、GitHubにプッシュします：
-     \`\`\`
-     git add .
-     git commit -m "変更内容の説明"
-     git push
-     \`\`\`
-
-7. コラボレーションとイシュー管理
-   - GitHubリポジトリのIssuesタブを使用して、タスクの追跡や問題の報告を行うことができます。
-   - Pull Requestsを使用して、コードレビューや変更の提案を行うことができます。
-
-8. GitHub Pagesを使用したデプロイ（オプション）
-   - リポジトリの設定で、GitHub Pagesを有効にすることで、アプリケーションを簡単にウェブ上で公開できます。
-   - 「Settings」 > 「Pages」に移動し、ソースブランチを選択して「Save」をクリックします。
-
-これらの手順に従うことで、Vocabulary Quiz AppをGitHubと連携し、バージョン管理やコラボレーション、さらにはデプロイまで行うことができます。
-
